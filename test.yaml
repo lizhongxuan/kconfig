@@ -1,0 +1,21 @@
+name: lzx
+old: 22
+arr:
+  - a:
+      zz: zzz
+      bb: nnn
+arr2:
+  arr3:
+    - aa
+    - bb
+    - cc
+arr4:
+  arr5:
+    - 1
+    - 2
+    - 3
+
+arr6:
+  aa: 1
+  bb: 2
+  cc: 3
