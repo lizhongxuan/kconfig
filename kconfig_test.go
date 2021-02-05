@@ -6,6 +6,15 @@ import (
 	"testing"
 )
 
+
+// BenchmarkGetStringMap-4   	25624730	        44.3 ns/op
+func BenchmarkGetStringMap(b *testing.B) {
+	InitConfig("test.yaml",false)
+	for i := 0; i < b.N; i++ {
+		GetStringMap("arr.0.a")
+	}
+}
+
 func TestYamlConfig(t *testing.T) {
 	InitConfig("test.yaml",false)
 	got := GetStringArray("arr2.arr3")
